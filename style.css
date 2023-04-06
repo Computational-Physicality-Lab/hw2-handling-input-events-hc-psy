@@ -1,0 +1,511 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 75px;
+    width: auto;
+    display: inline;
+    margin-left: 30px;
+}
+
+#red-banner {
+    background-color: #c40f30;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    display: inline;
+    float: right;
+    margin-right: 30px;
+}
+
+h2 {
+    margin-left: 20px;
+    color: #c40f30;
+}
+
+body {
+    margin-top: 20px;
+    background-color: #fefefe;
+}
+
+h1 {
+    color: black;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1vw;
+    color: #c40f30;
+    text-decoration: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+nav a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+#navigation {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#lightbox {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#navigation {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#info {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dont_ship,
+#design_shirt {
+    height: 80%;
+    width: 40%;
+    border: 3px solid #c40f30;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+#dont_ship h3,
+#dont_ship p,
+#design_shirt h3,
+#design_shirt p {
+    color: #c40f30;
+}
+
+#footer {
+    width: 100%;
+    background-color: #c40f30;
+    padding: 20px 0px 0px 0px;
+    margin-top: 20px;
+}
+
+#footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer p {
+    font-weight: 300;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#footer a {
+    color: white;
+    padding-bottom: 10px;
+}
+
+#products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.individual_product {
+    height: 500px;
+    width: 20%;
+    border: thin solid #c40f30;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.product_btn {
+    margin-right: 10px;
+    background-color: #c40f30;
+    color: #fefefe;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.product_btn:hover {
+    margin-right: 10px;
+    background-color: #c40f30;
+    color: pink;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* DETAILS.HTML STYLING */
+#product_name {
+    margin-left: 20px;
+    font-size: 36px;
+}
+
+#container-image {
+    width: 40%;
+    padding: 2%;
+    float: left;
+}
+
+#container-info {
+    width: 50%;
+    float: left;
+}
+
+#product_price {
+    font-weight: bold;
+    font-size: 30px;
+    color: #c40f30;
+}
+
+#product_description {
+    font-size: 22px;
+    color: #c40f30;
+}
+
+#product_side,
+#product_color {
+    font-size: 22px;
+}
+
+#scotty {
+    opacity: 0.2;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+#not_implemented {
+    width: 80%;
+    margin: auto;
+}
+
+#not_implemented p {
+    text-align: center;
+    /* margin-right: auto; */
+}
+
+
+.preview-box {
+    display: none;
+    background-color: #f7f7f7;
+    height: 320pt;
+    margin-bottom: 20pt;
+    border-radius: 10pt;
+    box-shadow: 0 2pt 10pt 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.preview-box-left {
+    display: flex;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.preview-img {
+    height: 280pt;
+    margin-left: 0;
+    margin-right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.preview-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.preview-box-right {
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-top: 3%;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+}
+
+#preview-title {
+    font-size: 30pt;
+    font-weight: bold;
+    margin-bottom: 20pt;
+    color: #c51230;
+}
+
+#preview-price {
+    color: #c51230;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 10pt;
+}
+
+#preview-text {
+    color: #6b6b6b;
+    font-size: 13pt;
+    font-weight: 300;
+    margin-bottom: 30pt;
+    line-height: 1.5;
+}
+
+#preview-button {
+    background-color: #c51230;
+    color: white;
+    font-weight: bold;
+    width: 25pt;
+    border-radius: 3pt;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    transition: all 0.3s ease-in-out;
+}
+
+#preview-button:hover {
+    background-color: #f7f7f7;
+    color: #c51230;
+    cursor: pointer;
+    border: 2pt solid #c51230;
+}
+
+
+@media (max-width: 600px) {
+
+    .preview-img {
+        width: 50vw;
+        height: auto;
+    }
+
+    #preview-title {
+        font-size: 24pt;
+    }
+
+    #preview-price {
+        font-size: 16pt;
+    }
+
+    #preview-text {
+        font-size: 11pt;
+    }
+}
+
+.detail-title {
+    color: black;
+    font-family: Catamaran;
+    font-size: 30pt;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.detail-title:hover {
+    font-size: 32pt;
+}
+
+.detail-content-box {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+.detail-content-right {
+    margin-left: 3%;
+    width: 60%;
+}
+
+#detail-content-price {
+    color: #c51230;
+    font-family: Catamaran;
+    font-size: 30pt;
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+
+#detail-content-text {
+    color: #c51230;
+    font-family: Catamaran;
+    font-size: 15pt;
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+
+#detail-content-side {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: gray;
+}
+
+#detail-content-side {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: gray;
+}
+
+#detail-content-color {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    color: gray;
+}
+
+#detail-content-side-button-box {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.detail-content-side-button {
+    display: flex;
+    margin: auto;
+    background-color: #c51230;
+    font-family: Catamaran;
+    color: lightgray;
+    font-weight: 300;
+    width: 25pt;
+    border-radius: 3pt;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    margin-right: 10pt;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.detail-content-side-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #b4001e;
+    transform: translateY(-3px);
+}
+
+
+
+
+.detail-content-side-button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#detail-content-color-button-box {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.detail-content-color-button {
+    display: flex;
+    margin: auto;
+    font-weight: 300;
+    color: black;
+    font-family: Catamaran;
+    text-align: center;
+    border: solid;
+    border-color: #c51230;
+    border-radius: 3pt;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-right: 10pt;
+    text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.detail-content-color-button:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.header-main-right {
+    display: flex;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    border-radius: 10pt;
+    background-color: #c51230;
+
+    font-family: "Open Sans";
+    text-decoration: none;
+    font-size: 25pt;
+    color: white;
+}
+
+@media(max-width: 750px) {
+    .header-main-right {
+        display: flex;
+        padding-left: 5pt;
+        padding-right: 5pt;
+        padding-top: 2pt;
+        padding-bottom: 2pt;
+        border-radius: 5pt;
+        background-color: #c51230;
+
+        font-family: "Open Sans";
+        text-decoration: none;
+        font-size: 15pt;
+        color: white;
+    }
+}
+
+.header-main-right:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+.header-main-right-logo {
+    height: 30pt;
+    margin-right: 10pt;
+}
