@@ -271,7 +271,7 @@ const handleTouchStartV = (e) => {
     e.preventDefault();
     const touchCount = e.touches.length;
     const time = new Date().getTime();
-    touchTime = time;
+    
 
     if (['focused', 'resizing'].includes(touchState)) {
         touchTimeResize = time;
@@ -298,6 +298,7 @@ const handleTouchStartV = (e) => {
             touchState = 'pending';
         }
     }
+    touchTime = time;
 };
 
 moveWorkspace.addEventListener('touchstart', handleTouchStartV, false);
