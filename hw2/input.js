@@ -240,9 +240,9 @@ const touchResizing = (e) => {
     let direction = (dxref > dyref) ? "x" : "y";
 
 
-    const [touch1, touch2] = e.touches;
-    const dx = (Math.abs(touch1.clientX - touch2.clientX) - dxref) / 10;
-    const dy = (Math.abs(touch1.clientY - touch2.clientY) - dyref) / 10;
+    
+    const dx = (Math.abs(e.touches[0].clientX - e.touches[1].clientX) - dxref) / 10;
+    const dy = (Math.abs(e.touches[0].clientY - e.touches[1].clientY) - dyref) / 10;
 
     if (direction == "x") {
         let x_ = resizeX - dx / 2;
